@@ -1,0 +1,26 @@
+$primario: cornflowerblue;
+$secundario: white;
+
+body {
+    background: $primario;
+}
+
+h2 {
+    color: $secundario;
+}
+
+#clientes {
+    list-style: none;
+    padding: 0;
+    li {
+        padding: 1rem;
+        font-size: 1.4rem;
+        background-color: $secundario;
+        color: $primario;
+
+        &:nth-child(2n+1) {
+            color: $secundario;
+            background-color: $primario;
+        }
+    }
+}
