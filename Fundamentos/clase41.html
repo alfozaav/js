@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 41 - Estructuras de datos inmutables</title>
+</head>
+<body>
+    <script>
+        const gerardo = {
+            nombre: 'Gerardo',
+            apellido: 'Zavala',
+            edad: 21
+        }
+
+        // const cumpleanos = persona => persona.edad++
+
+        const cumpleanosInmutable = persona => ({
+            ...persona,
+            edad: persona.edad + 1
+        })
+
+        //Se crea un nuevo objeto, no se modifica el original.
+    </script>
+</body>
+</html>
+
+<!-- Las estructuras de datos inmutables forman parte de los principios de la Programación Funcional y nos permiten evitar tener efectos colaterales en los datos. En otras palabras, que hayan modificaciones en las variables sin nuestro consentimiento, produciendo comportamientos inesperados en el programa. -->

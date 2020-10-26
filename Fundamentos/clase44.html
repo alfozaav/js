@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 44 - Cuando lleva ;?</title>
+</head>
+<body>
+    <script>
+        // alert('hola')
+        // var nombre = 'Gerardo'
+        //Despues de {} es innecesario poner ;
+
+        //Casos obligatorios para usar ;
+        console.log('Hola, me llamo Gerardo');
+        [1, 2, 3].forEach(n => console.log(n * 1))
+        //Cuando empiezas la siguiente linea poniendo un Array
+
+        const nombre = 'Gerardo'
+        console.log('Hola, me llamo Gerardo');
+        `${nombre} es un desarrollador`
+        //Cuando comienzas la linea con template strings
+
+
+        function calcularDoble(numero) {
+            return {original: numero, doble: numero * 2}
+        }
+        //Siempre el { en un return debe ir al lado de la palabra, si lo pones abajo js lo toma como si hubieses puesto:
+        // return ;
+        //{...}
+    </script>
+</body>
+</html>
+
+<!-- El punto y coma es opcional en JavaScript, excepto en algunos casos:
+
+Cuando usamos varias instrucciones en una mísma línea
+Al comenzar la próxima línea con un array
+Al comenzar la próxima línea con un template string -->

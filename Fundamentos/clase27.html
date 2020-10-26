@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo funciona el asincronismo en JavaScript</title>
+</head>
+<body>
+    <script>
+        console.log('a')
+        setTimeout(() => console.log('b'), 0)
+        // setTimeout(function () {
+        //     console.log('b')
+        // }, 2000)
+        //La B sale al final porque Js le dice al navegador que ejecute esa función cuando acabe de correr todo el programa, entonces entra a la lista de tareas. 
+        console.log('c')
+
+        setTimeout(() => console.log('d'), 2000)
+        for (var i = 0; i < 10; i++) {
+
+        }//Simulación de un programa largo
+        //Js va a ejecutar el setTimeout hasta que termine de ejecutar este programa.
+
+    </script>
+</body>
+</html>
